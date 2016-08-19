@@ -1,10 +1,10 @@
 ## Docker images
 
-This repository contains the Dockerfiles for building the GPU images for detectcnn
+This repository contains the Dockerfiles in docker/cpu and docker/gpu for building the images for detectcnn
 
 The docker images contain:
 - a running `dede` server ready to be used, no install required
-- `googlenet` and `resnet_50` pre-trained image classification models, in `/opt/models/`
+- `googlenet` pre-trained image classification models, in `/opt/models/`
 
 This allows to run the container and set an image classification model based on deep (residual) nets in two short command line calls.
 
@@ -61,6 +61,5 @@ d9944734d5d6        detectcnn   "/bin/sh -c './dede -"   17 seconds ago       Up
 ```
 > docker logs -f loving_shaw 
 
-DeepDetect [ commit 4e2c9f4cbd55eeba3a93fae71d9d62377e91ffa5 ]
-Running DeepDetect HTTP server on 0.0.0.0:8080
+Running DetectCNN HTTP server on 0.0.0.0:8080
 ```
